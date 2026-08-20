@@ -1,14 +1,12 @@
-import Database from 'better-sqlite3'
-import path from 'path'
+import { Pool, QueryResultRow } from 'pg'
 
-const dbPath = path.join(process.cwd(), 'heartbound.db')
-const db = new Database(dbPath)
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+})
 
-db.pragma('journal_mode = WAL')
-
-db.exec(`
+const initialization = pool.query(`
   CREATE TABLE IF NOT EXISTS users (
-    id TEXT PRIMARY KEY,
+    id UUID PRIMARY KEY,
     email TEXT UNIQUE NOT NULL,
     name TEXT NOT NULL,
     password TEXT NOT NULL,
@@ -16,4 +14,10 @@ db.exec(`
   )
 `)
 
-export { db }
+export async function query<T extends QueryResultRow = QueryResultRow>(
+  text: string,
+  values: unknown[] = []
+) {
+  await initialization
+  return pool.query<T>(text, values)
+}

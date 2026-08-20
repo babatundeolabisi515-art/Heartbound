@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import jwt from 'jsonwebtoken'
-import { db } from '@/lib/db'
+import { query } from '@/lib/db'
 
 const JWT_SECRET = process.env.BETTER_AUTH_SECRET!
 
@@ -20,9 +20,11 @@ export async function GET(request: Request) {
 
       try {
         const payload = jwt.verify(cookieToken, JWT_SECRET) as { userId: string; email: string }
-        const user = db.prepare('SELECT id, email, name FROM users WHERE id = ?').get(payload.userId) as
-          | { id: string; email: string; name: string }
-          | undefined
+        const { rows } = await query<{ id: string; email: string; name: string }>(
+          'SELECT id, email, name FROM users WHERE id = $1',
+          [payload.userId]
+        )
+        const user = rows[0]
 
         if (!user) {
           return NextResponse.json({ user: null })
@@ -36,9 +38,11 @@ export async function GET(request: Request) {
 
     try {
       const payload = jwt.verify(token, JWT_SECRET) as { userId: string; email: string }
-      const user = db.prepare('SELECT id, email, name FROM users WHERE id = ?').get(payload.userId) as
-        | { id: string; email: string; name: string }
-        | undefined
+      const { rows } = await query<{ id: string; email: string; name: string }>(
+        'SELECT id, email, name FROM users WHERE id = $1',
+        [payload.userId]
+      )
+      const user = rows[0]
 
       if (!user) {
         return NextResponse.json({ user: null })

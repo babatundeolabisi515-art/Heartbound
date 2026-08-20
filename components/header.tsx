@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { useAuth } from '@/components/auth-provider'
 
@@ -21,12 +22,17 @@ export function Header() {
     <header className="border-b border-border dark:border-border">
       <div className="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
         <div>
-          <Link href="/" className="text-2xl font-bold tracking-tight text-text-primary dark:text-text-primary hover:text-accent transition-colors">
-            heartbound
+          <Link href="/" className="flex items-center gap-3 text-text-primary dark:text-text-primary hover:text-accent transition-colors">
+            <Image
+              src="/heartbound-mark.svg"
+              alt=""
+              width={40}
+              height={40}
+              priority
+              aria-hidden="true"
+            />
+            <span className="text-2xl font-bold tracking-tight">Heartbound</span>
           </Link>
-          <p className="text-sm text-text-secondary dark:text-text-muted mt-1">
-            Where stories find you
-          </p>
         </div>
         <nav className="flex items-center gap-6">
           <Link href="/" className="text-sm font-medium text-text-secondary dark:text-text-muted hover:text-accent transition-colors">

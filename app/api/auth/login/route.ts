@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { db } from '@/lib/db'
+import { query } from '@/lib/db'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 
@@ -8,17 +8,20 @@ const JWT_SECRET = process.env.BETTER_AUTH_SECRET!
 export async function POST(request: Request) {
   try {
     const { email, password } = await request.json()
+    const normalizedEmail = typeof email === 'string' ? email.trim().toLowerCase() : ''
 
-    if (!email || !password) {
+    if (!normalizedEmail || !password) {
       return NextResponse.json(
         { error: 'Email and password are required' },
         { status: 400 }
       )
     }
 
-    const user = db.prepare('SELECT id, email, name, password FROM users WHERE email = ?').get(
-      email.toLowerCase()
-    ) as { id: string; email: string; name: string; password: string } | undefined
+    const { rows } = await query<{ id: string; email: string; name: string; password: string }>(
+      'SELECT id, email, name, password FROM users WHERE email = $1',
+      [normalizedEmail]
+    )
+    const user = rows[0]
 
     if (!user) {
       return NextResponse.json({ error: 'Invalid email or password' }, { status: 401 })
