@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95"/>
+      <stop offset="100%" stop-color="#1a0b2e"/>
+    </linearGradient>
+    <linearGradient id="heart1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="heart2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg)"/>
+  <path d="M120 170 C120 145 145 130 150 150 C155 130 180 145 180 170 C180 200 150 225 150 225 C150 225 120 200 120 170Z" fill="url(#heart1)" opacity="0.7"/>
+  <path d="M165 200 C165 185 175 180 180 190 C185 180 195 185 195 200 C195 215 180 230 180 230 C180 230 165 215 165 200Z" fill="url(#heart2)" opacity="0.6"/>
+  <path d="M110 260 Q150 240 190 260" fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.5"/>
+  <path d="M100 280 Q150 260 200 280" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+  <text x="150" y="320" font-family="Georgia, serif" font-size="18" fill="#faf5ff" text-anchor="middle" opacity="0.9">Almost</text>
+  <text x="150" y="342" font-family="Georgia, serif" font-size="18" fill="#faf5ff" text-anchor="middle" opacity="0.9">Us</text>
+</svg>
