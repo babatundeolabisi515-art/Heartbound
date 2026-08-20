@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getNovelBySlug } from '@/lib/data'
 import { Metadata } from 'next'
+import { Header } from '@/components/header'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -24,23 +25,12 @@ export default async function NovelPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-background dark:bg-background">
-      <header className="border-b border-border dark:border-border">
-        <div className="max-w-4xl mx-auto px-4 py-6 flex items-center justify-between">
-          <Link href="/" className="text-lg font-bold hover:text-text-secondary dark:hover:text-text-muted transition-colors">
-            heartbound
-          </Link>
-          <nav className="flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium hover:text-text-secondary dark:hover:text-text-muted transition-colors">
-              Library
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
-      <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-48 flex-shrink-0">
-            <div className="aspect-[3/4] bg-muted dark:bg-surface-alt rounded-lg overflow-hidden">
+      <main className="max-w-5xl mx-auto px-4 py-12">
+        <div className="flex flex-col md:flex-row gap-10">
+          <div className="w-full md:w-56 flex-shrink-0 mx-auto md:mx-0">
+            <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-surface-alt dark:bg-surface-alt border border-border dark:border-border shadow-lg">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={novel.cover}
@@ -51,39 +41,43 @@ export default async function NovelPage({ params }: PageProps) {
           </div>
 
           <div className="flex-1">
-            <h1 className="text-3xl font-bold text-text-primary dark:text-text-primary mb-2">
-              {novel.title}
-            </h1>
-            <p className="text-lg text-text-secondary dark:text-text-muted mb-4">
-              by {novel.author}
-            </p>
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-muted dark:bg-surface-alt text-text-secondary dark:text-text-muted rounded-full mb-6">
+            <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-accent/10 text-accent rounded-full mb-4">
               {novel.genre}
             </span>
-            <p className="text-text-primary dark:text-text-muted leading-relaxed mb-8">
+            <h1 className="text-3xl md:text-4xl font-bold text-text-primary dark:text-text-primary mb-3 leading-tight">
+              {novel.title}
+            </h1>
+            <p className="text-lg text-text-secondary dark:text-text-muted mb-6">
+              by {novel.author}
+            </p>
+            <p className="text-text-primary dark:text-text-secondary leading-relaxed mb-10 text-base">
               {novel.description}
             </p>
 
-            <div className="mb-8">
-              <h2 className="text-lg font-semibold mb-4 text-text-primary dark:text-text-primary">
+            <div className="mb-10">
+              <h2 className="text-lg font-semibold text-text-primary dark:text-text-primary mb-5 flex items-center gap-2">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                </svg>
                 Chapters ({novel.chapters.length})
               </h2>
-              <div className="space-y-2">
+              <div className="space-y-2.5">
                 {novel.chapters.map((chapter, idx) => (
                   <Link
                     key={chapter.id}
                     href={`/novel/${novel.slug}/chapter/${chapter.id}`}
-                    className="flex items-center justify-between p-4 bg-surface dark:bg-surface-alt rounded-lg border border-border dark:border-border hover:border-accent dark:hover:border-accent hover:shadow-sm transition-all group"
+                    className="flex items-center justify-between p-4 bg-surface dark:bg-surface-alt rounded-xl border border-border dark:border-border hover:border-accent dark:hover:border-accent hover:shadow-md hover:shadow-accent/5 dark:hover:shadow-accent/10 transition-all duration-200 group"
                   >
                     <div className="flex items-center gap-4">
-                      <span className="text-sm font-mono text-text-muted dark:text-text-secondary w-8">
+                      <span className="text-sm font-mono text-text-muted dark:text-text-secondary w-8 text-center">
                         {String(idx + 1).padStart(2, '0')}
                       </span>
-                      <span className="font-medium text-text-primary dark:text-text-primary group-hover:text-text-secondary dark:group-hover:text-text-muted transition-colors">
+                      <span className="font-medium text-text-primary dark:text-text-primary group-hover:text-accent transition-colors">
                         {chapter.title}
                       </span>
                     </div>
-                    <span className="text-text-muted group-hover:text-text-secondary dark:group-hover:text-text-muted transition-colors">
+                    <span className="text-text-muted group-hover:text-accent transition-colors">
                       →
                     </span>
                   </Link>
@@ -94,9 +88,12 @@ export default async function NovelPage({ params }: PageProps) {
             {novel.chapters.length > 0 && (
               <Link
                 href={`/novel/${novel.slug}/chapter/${novel.chapters[0].id}`}
-                className="inline-flex items-center justify-center px-6 py-3 bg-surface-alt dark:bg-muted text-surface dark:text-text-primary rounded-lg font-medium hover:bg-surface-alt dark:hover:bg-border transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-accent text-white rounded-xl font-semibold hover:bg-accent-blue transition-colors shadow-lg shadow-accent/20"
               >
                 Start Reading
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
               </Link>
             )}
           </div>

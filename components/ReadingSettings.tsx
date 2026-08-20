@@ -49,7 +49,7 @@ export function ReadingSettings({ novelSlug, chapterId }: ReadingSettingsProps) 
                 theme === 'light'
                   ? '#ffffff'
                   : theme === 'dark'
-                  ? '#1a1a1a'
+                  ? '#4c0519'
                   : '#f4ecd8',
             }}
             title={theme.charAt(0).toUpperCase() + theme.slice(1)}

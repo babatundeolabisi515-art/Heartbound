@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="petal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+  <path d="M100 20 C120 40 140 60 140 90 C140 120 120 140 100 140 C80 140 60 120 60 90 C60 60 80 40 100 20Z" fill="url(#petal)" opacity="0.12"/>
+  <path d="M100 160 C80 140 60 120 60 90 C60 60 80 40 100 20 C120 40 140 60 140 90 C140 120 120 140 100 160Z" fill="url(#petal)" opacity="0.08"/>
+  <circle cx="100" cy="90" r="8" fill="#fda4af" opacity="0.15"/>
+</svg>

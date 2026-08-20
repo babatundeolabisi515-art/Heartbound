@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9f1239"/>
+      <stop offset="100%" stop-color="#4c0519"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg)"/>
+  <rect x="60" y="150" width="180" height="120" rx="6" fill="url(#desk)" opacity="0.15"/>
+  <rect x="80" y="140" width="140" height="10" rx="3" fill="#fda4af" opacity="0.3"/>
+  <rect x="90" y="160" width="50" height="70" rx="2" fill="#fff1f2" opacity="0.08"/>
+  <rect x="150" y="160" width="50" height="70" rx="2" fill="#fff1f2" opacity="0.08"/>
+  <path d="M120 260 Q150 240 180 260" fill="none" stroke="#e11d48" stroke-width="2" opacity="0.5"/>
+  <path d="M110 280 Q150 260 190 280" fill="none" stroke="#be123c" stroke-width="1.5" opacity="0.4"/>
+  <text x="150" y="320" font-family="Georgia, serif" font-size="15" fill="#fff1f2" text-anchor="middle" opacity="0.9">After the</text>
+  <text x="150" y="340" font-family="Georgia, serif" font-size="15" fill="#fff1f2" text-anchor="middle" opacity="0.9">Last Bell</text>
+</svg>

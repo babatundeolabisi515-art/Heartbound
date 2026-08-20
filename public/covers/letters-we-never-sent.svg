@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9f1239"/>
+      <stop offset="100%" stop-color="#4c0519"/>
+    </linearGradient>
+    <linearGradient id="envelope" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg)"/>
+  <rect x="75" y="130" width="150" height="170" rx="6" fill="url(#envelope)" opacity="0.2"/>
+  <rect x="85" y="140" width="130" height="150" rx="4" fill="none" stroke="#fda4af" stroke-width="1.5" opacity="0.5"/>
+  <path d="M85 140 L150 185 L215 140" fill="none" stroke="#fff1f2" stroke-width="2" opacity="0.7"/>
+  <circle cx="150" cy="230" r="6" fill="#fff1f2" opacity="0.9"/>
+  <path d="M110 280 Q150 260 190 280" fill="none" stroke="#e11d48" stroke-width="2" opacity="0.5"/>
+  <path d="M100 300 Q150 280 200 300" fill="none" stroke="#be123c" stroke-width="1.5" opacity="0.4"/>
+  <text x="150" y="320" font-family="Georgia, serif" font-size="15" fill="#fff1f2" text-anchor="middle" opacity="0.9">Letters We</text>
+  <text x="150" y="340" font-family="Georgia, serif" font-size="15" fill="#fff1f2" text-anchor="middle" opacity="0.9">Never Sent</text>
+</svg>

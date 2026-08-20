@@ -3,6 +3,334 @@ import { Novel } from './types'
 export const novels: Novel[] = [
   {
     id: '1',
+    slug: 'letters-we-never-sent',
+    title: 'Letters We Never Sent',
+    author: 'Maya Chen',
+    description:
+      'Maya has written seventeen letters to Daniel, none of which she ever sent. When a rumor spreads that he is with someone else, she must decide whether to keep hiding her feelings or finally let him read the truth.',
+    cover: '/covers/letters-we-never-sent.svg',
+    genre: 'College Romance',
+    chapters: [
+      {
+        id: 'ch-1',
+        title: 'The Letter',
+        content: `Maya had always believed that some feelings were better left unsaid.
+
+That was why she kept the letters.
+
+There were seventeen of them, all folded carefully and hidden inside an old blue box beneath her bed. None had ever reached the person they were written for.
+
+His name was Daniel.
+
+They had been friends since their first year at Westbridge College. He was the kind of person who could make an entire room laugh without trying, while Maya was usually happiest sitting quietly with a book.
+
+Somehow, they had become inseparable.
+
+But somewhere between late-night conversations, shared lunches, and walking home together after lectures, Maya had started falling for him.
+
+She had never told him.
+
+Then, one Monday morning, everything changed.
+
+"Maya!"
+
+She looked up to see Daniel running toward her across the campus.
+
+"You forgot this."
+
+He held up her notebook.
+
+Her heart jumped.
+
+"Thanks," she said, taking it from him.
+
+Daniel smiled. "You know, one day you're going to lose your head."
+
+"Maybe you can help me find it."
+
+He laughed.
+
+Maya smiled too, but inside, she wished she had been brave enough to say what she really meant.
+
+Maybe I only lose myself around you.`,
+      },
+      {
+        id: 'ch-2',
+        title: 'Someone New',
+        content: `A new student joined their class that week.
+
+Her name was Sophie.
+
+She was confident, friendly, and immediately popular.
+
+And Daniel liked her.
+
+Maya noticed it almost immediately.
+
+The way he laughed at Sophie's jokes.
+
+The way he volunteered to show her around campus.
+
+The way he seemed to forget that Maya was standing beside him.
+
+"You okay?" her friend Tessa asked.
+
+"I'm fine."
+
+"You've said that three times."
+
+Maya forced a smile.
+
+"I'm really fine."
+
+She wasn't.
+
+That evening, she wrote another letter.
+
+Dear Daniel,
+
+Today I realized that maybe I'm running out of time.
+
+Maybe one day you'll fall in love with someone else, and I'll have to pretend I'm happy for you.
+
+She folded the letter.
+
+She placed it in the blue box.
+
+And once again, she said nothing.`,
+      },
+      {
+        id: 'ch-3',
+        title: 'The Rumor',
+        content: `By Friday, everyone was talking about Daniel and Sophie.
+
+Someone had apparently seen them together at a café.
+
+"They're dating," Tessa whispered.
+
+Maya's stomach dropped.
+
+"That's ridiculous."
+
+"You don't believe it?"
+
+"No."
+
+But she did.
+
+That afternoon, Maya avoided Daniel.
+
+She took a different route home.
+
+She stopped answering his messages.
+
+She even ignored his calls.
+
+Finally, he appeared outside her classroom.
+
+"Did I do something?"
+
+"No."
+
+"Then why are you avoiding me?"
+
+"I'm not."
+
+"Maya."
+
+She looked at him.
+
+For a moment, neither spoke.
+
+"I heard you're with Sophie."
+
+Daniel stared at her.
+
+Then he laughed.
+
+"That's what this is about?"
+
+Maya's face became hot.
+
+"Forget it."
+
+She walked away.
+
+Daniel watched her go, completely confused.`,
+      },
+      {
+        id: 'ch-4',
+        title: 'The Truth',
+        content: `The truth came two days later.
+
+Sophie found Maya in the library.
+
+"I need to tell you something."
+
+Maya looked up.
+
+"What?"
+
+"I think Daniel likes you."
+
+Maya nearly dropped her pen.
+
+"What?"
+
+"He talks about you constantly."
+
+Maya stared at her.
+
+"But I thought you two—"
+
+Sophie shook her head. "We're friends."
+
+"Then why did everyone say—"
+
+"Because people like rumors."
+
+Maya couldn't believe it.
+
+For the first time, hope returned.
+
+That evening, she went home and opened the blue box.
+
+She pulled out all seventeen letters.
+
+She read them one by one.
+
+Then she realized something.
+
+She didn't want to keep hiding.
+
+She picked up a fresh piece of paper.
+
+Dear Daniel,
+
+This time, I'm going to give you this letter.`,
+      },
+      {
+        id: 'ch-5',
+        title: 'The Confession',
+        content: `Daniel was waiting outside the campus gate the next morning.
+
+"Maya."
+
+She stopped.
+
+"I've been trying to talk to you."
+
+"I know."
+
+He looked nervous.
+
+"I don't know what happened between us, but I don't want to lose you."
+
+Maya took a deep breath.
+
+"Daniel, there's something I've wanted to tell you for a long time."
+
+He waited.
+
+"I like you."
+
+Silence.
+
+Maya looked down.
+
+"I mean... I really like you."
+
+Daniel smiled.
+
+"You have no idea how long I've been waiting for you to say that."
+
+She looked up.
+
+"You knew?"
+
+"I hoped."
+
+He stepped closer.
+
+"I've liked you for years, Maya."
+
+She laughed nervously.
+
+"Then why didn't you say anything?"
+
+"Because I was scared."
+
+"So was I."
+
+They both laughed.
+
+Then Daniel gently took her hand.
+
+"Maybe we should stop being scared."
+
+Maya smiled.
+
+"Maybe we should."
+
+For the first time, one of Maya's letters didn't stay hidden.
+
+It became the beginning of their story.`,
+      },
+      {
+        id: 'ch-6',
+        title: 'A New Beginning',
+        content: `Their relationship wasn't perfect.
+
+They argued.
+
+They misunderstood each other.
+
+Sometimes they became jealous over things that didn't matter.
+
+But they always came back to one another.
+
+Months later, Maya found the blue box while cleaning her room.
+
+She smiled at the seventeen letters inside.
+
+Daniel noticed.
+
+"What's that?"
+
+"Nothing."
+
+He reached for the box.
+
+"Hey!"
+
+She laughed and pulled it away.
+
+"Maybe someday."
+
+"Someday?"
+
+"Maybe I'll let you read them."
+
+Daniel smiled.
+
+"I'll wait."
+
+Maya looked at him.
+
+She finally understood something.
+
+Some feelings were worth keeping quiet for a while.
+
+But some feelings deserved to be spoken.
+
+And theirs had finally been heard.
+
+The End`,
+      },
+    ],
+  },
+  {
+    id: '2',
     slug: 'the-boy-i-wasnt-supposed-to-love',
     title: 'The Boy I Wasn\'t Supposed to Love',
     author: 'Sophie Hart',
@@ -121,7 +449,7 @@ Not even a little bit.`,
     ],
   },
   {
-    id: '2',
+    id: '3',
     slug: 'letters-from-room-307',
     title: 'Letters from Room 307',
     author: 'Emma Blake',
@@ -224,7 +552,7 @@ She just hoped she wouldn't wake up.`,
     ],
   },
   {
-    id: '3',
+    id: '4',
     slug: 'almost-us',
     title: 'Almost Us',
     author: 'Mia Rodriguez',
@@ -371,7 +699,7 @@ Mia realized it just in time.`,
     ],
   },
   {
-    id: '4',
+    id: '5',
     slug: 'echoes-of-stars',
     title: 'Echoes of Stars',
     author: 'Kai Soren',
@@ -408,7 +736,7 @@ Maren smiled. She liked the stubborn ones.`,
     ],
   },
   {
-    id: '5',
+    id: '6',
     slug: 'the-last-bookshop',
     title: 'The Last Bookshop',
     author: 'Rowan Ash',
@@ -447,6 +775,900 @@ Jude looked at the key. It was heavy, iron, cold against his skin. "Why me?"
 She turned away to straighten a pile of cracked porcelain, and Jude understood, with a sudden, quiet certainty, that he was being trusted with something far more valuable than paper and ink.
 
 He was being trusted with a secret.`,
+      },
+    ],
+  },
+  {
+    id: '7',
+    slug: 'the-summer-we-became-us',
+    title: 'The Summer We Became Us',
+    author: 'Nora Collins',
+    description:
+      'Nora planned to spend her summer avoiding everyone. Then she met Ryan, the annoying boy who works at the seaside café. As the weeks pass, their friendship deepens—but with Ryan leaving after summer, Nora must decide whether to speak up or let him go.',
+    cover: '/covers/the-summer-we-became-us.svg',
+    genre: 'Summer Romance',
+    chapters: [
+      {
+        id: 'ch-1',
+        title: 'The Summer Job',
+        content: `Nora hated summer jobs.
+
+She had planned to spend her vacation sleeping late, watching movies, and avoiding everyone from school.
+
+Instead, her mother convinced her to work at a small seaside café.
+
+On her first day, Nora arrived ten minutes late.
+
+"You're late."
+
+She looked up.
+
+A boy stood behind the counter, holding a tray of drinks.
+
+He had messy brown hair and an irritatingly confident smile.
+
+"I'm sorry. Are you the manager?"
+
+"No."
+
+"Then why do you care?"
+
+He smiled.
+
+"Because you're standing in my way."
+
+Nora stepped aside.
+
+"You're annoying."
+
+"And you're late."
+
+His name was Ryan.
+
+Unfortunately, she would be seeing him almost every day.`,
+      },
+      {
+        id: 'ch-2',
+        title: 'Enemies',
+        content: `Nora and Ryan couldn't agree on anything.
+
+He liked loud music.
+
+She preferred quiet.
+
+He was always joking.
+
+She was serious.
+
+He loved talking to customers.
+
+She preferred working in the kitchen.
+
+Yet somehow, they worked well together.
+
+One afternoon, Nora accidentally spilled a glass of lemonade on Ryan.
+
+He stared at his shirt.
+
+She covered her mouth.
+
+"Don't laugh."
+
+"I'm not."
+
+"You are."
+
+"I'm trying not to."
+
+He started laughing.
+
+A second later, Nora laughed too.
+
+It was the first time they had genuinely enjoyed being around each other.`,
+      },
+      {
+        id: 'ch-3',
+        title: 'The Secret',
+        content: `As the weeks passed, Nora began noticing things about Ryan.
+
+He always stayed late to help clean.
+
+He remembered regular customers' names.
+
+He secretly gave free meals to children who couldn't afford them.
+
+One evening, she found him sitting alone outside.
+
+"You okay?"
+
+He shrugged.
+
+"Yeah."
+
+"You're lying."
+
+Ryan smiled faintly.
+
+"My dad wants me to leave town after summer."
+
+Nora sat beside him.
+
+"Why?"
+
+"He thinks I should go to college somewhere far away."
+
+"Do you want to?"
+
+"I don't know."
+
+For the first time, Nora saw something different in him.
+
+The confident boy had been hiding his fear.`,
+      },
+      {
+        id: 'ch-4',
+        title: 'Almost',
+        content: `One evening after closing, the café was completely empty.
+
+Ryan turned off the lights.
+
+Nora was standing by the window, watching the ocean.
+
+"It's beautiful."
+
+"Yeah."
+
+She turned.
+
+Ryan was looking at her instead of the ocean.
+
+"What?"
+
+"Nothing."
+
+He stepped closer.
+
+"Nora..."
+
+She looked at him.
+
+Neither spoke.
+
+He leaned toward her.
+
+Then the door opened.
+
+Their manager walked in.
+
+"Why are you two still here?"
+
+They immediately stepped apart.
+
+"Cleaning," Ryan said.
+
+"Obviously," Nora added.
+
+The manager looked suspicious.`,
+      },
+      {
+        id: 'ch-5',
+        title: 'The Fight',
+        content: `A few days later, Nora overheard Ryan talking to another employee.
+
+"I'm leaving after summer."
+
+Her heart sank.
+
+She confronted him.
+
+"You weren't going to tell me?"
+
+"I was."
+
+"When?"
+
+"I don't know."
+
+"So you were just going to disappear?"
+
+Ryan became frustrated.
+
+"Why does it matter?"
+
+Nora stared at him.
+
+"Because I care about you."
+
+Silence.
+
+Ryan looked at her.
+
+"I care about you too."
+
+"Then why didn't you tell me?"
+
+"Because I knew you'd make it harder to leave."
+
+Nora's eyes filled with tears.
+
+"Maybe I don't want you to leave."
+
+Ryan didn't answer.
+
+She walked away.`,
+      },
+      {
+        id: 'ch-6',
+        title: 'The Last Week',
+        content: `They barely spoke during the final week of summer.
+
+The café felt different.
+
+Too quiet.
+
+On Ryan's last day, Nora found a small envelope on the counter.
+
+Inside was a photograph of the two of them.
+
+On the back, Ryan had written:
+
+You made this summer unforgettable.
+
+Nora ran outside.
+
+Ryan was already walking toward the bus station.
+
+"Ryan!"
+
+He turned.
+
+She ran toward him.
+
+"You can't leave like this."
+
+"I have to."
+
+"Then promise me something."
+
+"What?"
+
+"Don't let this be the end."
+
+Ryan smiled sadly.
+
+"I promise."`,
+      },
+      {
+        id: 'ch-7',
+        title: 'One Year Later',
+        content: `Nora returned to the café the following summer.
+
+She didn't expect to see him.
+
+But there he was.
+
+Standing behind the counter.
+
+She stopped.
+
+"You're back."
+
+Ryan smiled.
+
+"I told you I would be."
+
+Nora walked toward him.
+
+"Did you come back for the job?"
+
+"No."
+
+"For what, then?"
+
+Ryan looked at her.
+
+"You."
+
+She smiled.
+
+And suddenly, the summer didn't feel like something that had ended.
+
+It felt like something that had finally begun.
+
+The End`,
+      },
+    ],
+  },
+  {
+    id: '8',
+    slug: 'after-the-last-bell',
+    title: 'After the Last Bell',
+    author: 'Ethan Park',
+    description:
+      'Ethan, a quiet high school student, has always kept to himself. Then Lily transfers into his class and sits beside him, changing everything. But with a boyfriend in the way and unspoken feelings growing, Ethan must decide whether to stay silent or risk everything.',
+    cover: '/covers/after-the-last-bell.svg',
+    genre: 'High School Romance',
+    chapters: [
+      {
+        id: 'ch-1',
+        title: 'The New Seat',
+        content: `Ethan had never expected his final year of high school to be interesting.
+
+He was happy keeping to himself, focusing on his grades and avoiding unnecessary drama.
+
+Then Lily transferred into his class.
+
+She arrived halfway through the school year and ended up sitting beside him.
+
+"Hi," she said.
+
+"Hi."
+
+"I'm Lily."
+
+"Ethan."
+
+"I know."
+
+He looked at her.
+
+"You know me?"
+
+"Everyone knows you. You're the quiet genius."
+
+Ethan laughed.
+
+"I'm not a genius."
+
+"You got the highest score on the last mathematics test."
+
+"That doesn't make me a genius."
+
+"Fine. Quiet nerd."
+
+He smiled.
+
+It was the first time anyone had made him laugh in class.
+
+And Lily noticed.`,
+      },
+      {
+        id: 'ch-2',
+        title: 'The Friendship',
+        content: `Over the next few weeks, they became friends.
+
+They studied together.
+
+They shared snacks during lunch.
+
+They complained about teachers.
+
+Lily even convinced Ethan to join her and her friends after school.
+
+For Ethan, everything felt different.
+
+He was beginning to look forward to school.
+
+But Lily had a boyfriend.
+
+His name was Marcus.
+
+Marcus was popular, confident, and always surrounded by people.
+
+Ethan told himself it didn't matter.
+
+Lily was his friend.
+
+Nothing more.
+
+At least, that's what he told himself.`,
+      },
+      {
+        id: 'ch-3',
+        title: 'Jealousy',
+        content: `One afternoon, Ethan saw Lily arguing with Marcus.
+
+"You never listen to me!" Lily shouted.
+
+Marcus walked away angrily.
+
+Ethan approached her.
+
+"Are you okay?"
+
+"I'm fine."
+
+"You don't look fine."
+
+She sighed.
+
+"I don't know what's wrong anymore."
+
+Ethan sat beside her.
+
+"You don't have to figure everything out today."
+
+She looked at him.
+
+"How do you always know what to say?"
+
+"I don't."
+
+She smiled.
+
+"You're a good friend."
+
+The words hurt more than he expected.
+
+Because he wanted to be something more.`,
+      },
+      {
+        id: 'ch-4',
+        title: 'The School Festival',
+        content: `The annual school festival arrived.
+
+Lily wore a simple blue dress.
+
+When Ethan saw her, he forgot what he was about to say.
+
+She waved.
+
+"Are you coming?"
+
+"Yeah."
+
+They spent most of the evening together.
+
+They played games, ate together, and laughed until their stomachs hurt.
+
+At the end of the night, Lily looked at him.
+
+"I wish every day could be like this."
+
+Ethan smiled.
+
+"Me too."
+
+For a moment, they stood quietly.
+
+Then Marcus appeared.
+
+"Lily, we need to talk."
+
+Her smile disappeared.
+
+She followed him.
+
+Ethan watched them walk away.
+
+He knew something was about to change.`,
+      },
+      {
+        id: 'ch-5',
+        title: 'Goodbye',
+        content: `The next morning, Lily broke up with Marcus.
+
+She told Ethan everything.
+
+"I realized I was staying with him because I was afraid of being alone."
+
+"Are you okay?"
+
+"I think so."
+
+She looked at Ethan.
+
+"Can I ask you something?"
+
+"Sure."
+
+"Why were you always there for me?"
+
+Ethan froze.
+
+Because I love you.
+
+The words were in his head.
+
+But he couldn't say them.
+
+"Because you're my friend."
+
+Lily looked disappointed.
+
+"Right."
+
+She walked away.
+
+Ethan immediately regretted his answer.`,
+      },
+      {
+        id: 'ch-6',
+        title: 'The Last Bell',
+        content: `Graduation arrived faster than either of them expected.
+
+Everyone was celebrating.
+
+Taking pictures.
+
+Saying goodbye.
+
+Making promises to stay friends forever.
+
+Ethan stood outside the classroom when Lily approached him.
+
+"So this is it."
+
+"Yeah."
+
+"I'm going to miss you."
+
+"I'll miss you too."
+
+She smiled sadly.
+
+Then the final school bell rang.
+
+Students cheered.
+
+Ethan looked at Lily.
+
+He realized that if he stayed silent now, he might regret it forever.
+
+"Lily."
+
+She turned.
+
+"I lied."
+
+"What?"
+
+"When you asked why I was always there for you."
+
+He took a breath.
+
+"It wasn't just because you're my friend."
+
+Lily stared at him.
+
+"I've liked you for a long time."
+
+She smiled.
+
+"I was hoping you'd say that."
+
+Ethan blinked.
+
+"You knew?"
+
+"Of course."
+
+She laughed.
+
+"You're terrible at hiding your feelings."
+
+He laughed too.
+
+"So what happens now?"
+
+Lily held out her hand.
+
+"We find out."
+
+He took it.`,
+      },
+      {
+        id: 'ch-7',
+        title: 'Beyond School',
+        content: `Months passed.
+
+College applications.
+
+New classes.
+
+New friends.
+
+New challenges.
+
+But Ethan and Lily stayed close.
+
+Their relationship wasn't some perfect fairytale.
+
+They still argued.
+
+They still got jealous.
+
+They still had bad days.
+
+But they learned how to talk instead of walking away.
+
+One evening, they returned to their old school for a festival.
+
+They stood outside the classroom where they had first met.
+
+"Remember this place?" Lily asked.
+
+"How could I forget?"
+
+She smiled.
+
+"The seat beside you changed everything."
+
+Ethan looked at her.
+
+"Maybe the last bell didn't really mean goodbye."
+
+Lily squeezed his hand.
+
+"No."
+
+She smiled.
+
+"Maybe it meant the beginning."
+
+And together, they walked away from the school gates—not knowing exactly what the future held, but knowing they wanted to face it together.
+
+The End`,
+      },
+    ],
+  },
+  {
+    id: '9',
+    slug: 'the-boy-behind-the-smile',
+    title: 'The Boy Behind the Smile',
+    author: 'Avery Bennett',
+    description:
+      'Emma has always found Alex irritating—until their history project forces them to spend time together. When Emma discovers the real boy behind the popular smile, she realizes some hearts are worth understanding.',
+    cover: '/covers/the-boy-behind-the-smile.svg',
+    genre: 'High School Romance',
+    chapters: [
+      {
+        id: 'ch-1',
+        title: 'The Popular Boy',
+        content: `Everyone at school knew Alex.
+
+He was funny.
+
+Confident.
+
+Popular.
+
+He seemed to know everyone and always had a joke ready.
+
+Emma couldn't understand why she found him irritating.
+
+Maybe it was because he never took anything seriously.
+
+Or maybe it was because every time he smiled at her, she forgot what she was saying.
+
+They were paired together for a history project.
+
+"Looks like you're stuck with me," Alex said.
+
+Emma sighed.
+
+"For three weeks."
+
+"Don't sound so excited."
+
+"I'll try."
+
+He laughed.
+
+And despite herself, Emma smiled.`,
+      },
+      {
+        id: 'ch-2',
+        title: 'Something Different',
+        content: `Their project forced them to spend more time together.
+
+They studied after school.
+
+They messaged each other about assignments.
+
+Soon, their conversations had nothing to do with history.
+
+One night, Alex sent her a message.
+
+Do you ever wonder what people really think about you?
+
+Emma replied:
+
+Sometimes.
+
+I do all the time.
+
+She stared at the screen.
+
+That didn't sound like the Alex everyone knew.
+
+Why?
+
+His reply came several minutes later.
+
+Because everyone thinks I'm happy.
+
+Emma didn't know what to say.
+
+So she simply replied:
+
+You can talk to me.`,
+      },
+      {
+        id: 'ch-3',
+        title: 'The Real Alex',
+        content: `The next afternoon, Alex told Emma about his parents' divorce.
+
+He told her about feeling responsible for keeping his younger sister happy.
+
+He told her how exhausting it was pretending everything was fine.
+
+"I don't tell people this," he said.
+
+"Why me?"
+
+"Because you don't look at me like everyone else does."
+
+Emma smiled.
+
+"How do I look at you?"
+
+"Like I'm just Alex."
+
+"That's because you are."
+
+He laughed quietly.
+
+"I like that."
+
+Emma realized she was falling for him.`,
+      },
+      {
+        id: 'ch-4',
+        title: 'The Rumor',
+        content: `Then a rumor spread.
+
+Someone claimed Alex had been flirting with another girl.
+
+Emma believed it.
+
+She stopped answering his messages.
+
+At school, she avoided him.
+
+Finally, Alex cornered her near the library.
+
+"What did I do?"
+
+"Nothing."
+
+"Then why won't you talk to me?"
+
+"I heard about you and Chloe."
+
+Alex stared at her.
+
+"Chloe?"
+
+Emma nodded.
+
+"There's nothing between us."
+
+"You don't have to explain."
+
+"I want to."
+
+He stepped closer.
+
+"I don't care about Chloe."
+
+Emma looked at him.
+
+"Then who do you care about?"
+
+Alex smiled nervously.
+
+"You."
+
+Her heart stopped.`,
+      },
+      {
+        id: 'ch-5',
+        title: 'The Dance',
+        content: `The school dance was two weeks later.
+
+Alex asked Emma to go with him.
+
+She said yes.
+
+That night, they danced together while their friends watched from across the room.
+
+"You look beautiful," Alex whispered.
+
+Emma smiled.
+
+"You clean up pretty well yourself."
+
+He laughed.
+
+Then the music slowed.
+
+Alex took her hand.
+
+"I've been wanting to do something."
+
+"What?"
+
+He leaned closer.
+
+Emma closed her eyes.
+
+Their first kiss was gentle and nervous.
+
+When they pulled apart, they both laughed.
+
+"That was awkward," Emma said.
+
+"Very."
+
+"Do you want to try again?"
+
+Alex smiled.
+
+"Definitely."`,
+      },
+      {
+        id: 'ch-6',
+        title: 'The Future',
+        content: `Their relationship wasn't easy.
+
+Alex still had difficult days.
+
+Emma still worried too much.
+
+Sometimes they argued.
+
+Sometimes they needed space.
+
+But neither of them pretended everything was perfect anymore.
+
+They learned that love wasn't about pretending to have no problems.
+
+It was about having someone who stayed when things became difficult.
+
+One afternoon, they sat together beneath the old tree behind the school.
+
+"What do you think we'll be like in five years?" Emma asked.
+
+Alex smiled.
+
+"Hopefully still together."
+
+"That's your big plan?"
+
+"Pretty much."
+
+Emma laughed.
+
+"Very romantic."
+
+He took her hand.
+
+"I don't know where we'll end up."
+
+He looked at her.
+
+"But I know who I want beside me."
+
+Emma rested her head against his shoulder.
+
+For the first time, Alex didn't feel like he needed to smile for everyone.
+
+He was simply happy.
+
+And Emma knew that was enough.
+
+The End`,
       },
     ],
   },

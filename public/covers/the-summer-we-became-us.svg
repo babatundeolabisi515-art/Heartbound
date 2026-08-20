@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9f1239"/>
+      <stop offset="100%" stop-color="#4c0519"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg)"/>
+  <path d="M0 280 Q75 260 150 280 T300 280 L300 400 L0 400 Z" fill="url(#wave)" opacity="0.15"/>
+  <path d="M0 300 Q75 280 150 300 T300 300 L300 400 L0 400 Z" fill="url(#wave)" opacity="0.1"/>
+  <circle cx="150" cy="180" r="30" fill="none" stroke="#fda4af" stroke-width="1.5" opacity="0.5"/>
+  <path d="M150 150 L155 165 L170 165 L158 175 L163 190 L150 180 L137 190 L142 175 L130 165 L145 165 Z" fill="#fda4af" opacity="0.8"/>
+  <path d="M110 250 Q150 230 190 250" fill="none" stroke="#e11d48" stroke-width="2" opacity="0.5"/>
+  <path d="M100 270 Q150 250 200 270" fill="none" stroke="#be123c" stroke-width="1.5" opacity="0.4"/>
+  <text x="150" y="320" font-family="Georgia, serif" font-size="15" fill="#fff1f2" text-anchor="middle" opacity="0.9">The Summer We</text>
+  <text x="150" y="340" font-family="Georgia, serif" font-size="15" fill="#fff1f2" text-anchor="middle" opacity="0.9">Became Us</text>
+</svg>
